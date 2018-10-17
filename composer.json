@@ -10,7 +10,10 @@
     ],
     "autoload": {
         "psr-0": {
-            "HelloWorld": "src/"
+            "Devo\\HelloWorld\\": "src/"
+        },
+        "psr-4": {
+            "Devo\\HelloWorld\\": "src/"
         }
     },
     "require": {
@@ -19,6 +22,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "master-dev"
+        },
+        "laravel": {
+            "providers": [
+                "DeVo\\HelloWorld\\SayHelloServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
