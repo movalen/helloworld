@@ -6,11 +6,15 @@ use Illuminate\Support\ServiceProvider;
 
 class SayHelloServiceProvider extends ServiceProvider
 {
-    protected $defer = true;
-    
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'../config' => public_path('vendor/courier'),
+        ], 'public');
 
+        $this->publishes([
+            __DIR__.'../config/courier.php' => config_path('courier.php'),
+        ]);
     }
 
     /**
@@ -21,10 +25,5 @@ class SayHelloServiceProvider extends ServiceProvider
     public function register()
     {
 
-    }
-
-    public static function world()
-    {
-        return 'Hello World, Composer!';
     }
 }

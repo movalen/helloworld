@@ -10,10 +10,10 @@
     ],
     "autoload": {
         "psr-0": {
-            "Devo\\HelloWorld\\": "src/"
+            "DeVo\\HelloWorld\\": "src/"
         },
         "psr-4": {
-            "Devo\\HelloWorld\\": "src/"
+            "DeVo\\HelloWorld\\": "src/"
         }
     },
     "require": {
