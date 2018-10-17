@@ -9,11 +9,11 @@ class SayHelloServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'../config' => public_path('vendor/courier'),
+            __DIR__.'/../config' => public_path('vendor/courier'),
         ], 'public');
 
         $this->publishes([
-            __DIR__.'../config/courier.php' => config_path('courier.php'),
+            __DIR__.'/../config/courier.php' => config_path('courier.php'),
         ]);
     }
 
