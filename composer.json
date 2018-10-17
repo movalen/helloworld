@@ -9,9 +9,6 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "DeVo\\HelloWorld\\": "src/"
-        },
         "psr-4": {
             "DeVo\\HelloWorld\\": "src/"
         }

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Devo\HelloWorld;
+namespace DeVo\HelloWorld;
 
 use Illuminate\Support\ServiceProvider;
 
